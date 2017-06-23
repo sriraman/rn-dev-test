@@ -138,10 +138,10 @@ dates.asap | Defines if the start date is as soon as possible or not (INT: 1 = t
 ## Displaying images
 We use cloudinary for our image manipulations and CDN. More about it here: http://cloudinary.com/documentation/image_transformations
 
-https://res.cloudinary.com/chris-mackie/image/upload/<options>/v<version>/<name>
-`c_thumb`,`g_face`,`h_60`,`w_60` <- options
-`65484321354`<- version
-`profile_12548-avatar` <- name
+* image link: https://res.cloudinary.com/chris-mackie/image/upload/<options>/v<version>/<name>
+* options: `c_thumb`,`g_face`,`h_60`,`w_60`
+* version: `65484321354`
+* name: `profile_12548-avatar`
 
 ## Pull requests
 When you are ready to make a pull request, please create a branch with your github username
