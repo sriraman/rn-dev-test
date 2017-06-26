@@ -1,0 +1,3 @@
+rootProject.name = 'inploi_app'
+
+include ':app'
