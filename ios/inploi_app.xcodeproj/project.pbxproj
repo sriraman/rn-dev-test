@@ -536,7 +536,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E8873E381F0165110067BCE9 /* ShellScript */,
+				E8873E381F0165110067BCE9 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -597,7 +597,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = Q9DXK38YTN;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -932,13 +933,14 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
-		E8873E381F0165110067BCE9 /* ShellScript */ = {
+		E8873E381F0165110067BCE9 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1058,7 +1060,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q9DXK38YTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1073,7 +1075,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inploi.ios;
 				PRODUCT_NAME = inploi_app;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c409dcdb-e44b-4809-98a8-5ce11b41aad5";
+				PROVISIONING_PROFILE_SPECIFIER = Inploi;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1084,7 +1087,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q9DXK38YTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1099,7 +1102,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inploi.ios;
 				PRODUCT_NAME = inploi_app;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c409dcdb-e44b-4809-98a8-5ce11b41aad5";
+				PROVISIONING_PROFILE_SPECIFIER = Inploi;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
