@@ -37,9 +37,12 @@ class Home extends Component {
       if (res.error) {
         switch (res.error) {
           case 'internet_not_reachable':
-            this.setState({isInternetReachable: false})break
+            this.setState({isInternetReachable: false})
+            break
           default:
-            AsyncStorage.setItem('accessToken', '')Actions.login()break
+            AsyncStorage.setItem('accessToken', '')
+            Actions.login()
+            break
         }
       } else {
         this.setState({isLoading: false, loadedPage: 1, refreshing: false, jobs: res.browse})

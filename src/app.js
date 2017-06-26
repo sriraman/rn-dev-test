@@ -11,7 +11,8 @@ class App extends Component {
   _logout() {
     return (
       <TouchableOpacity onPress={() => {
-        AsyncStorage.setItem(ACCESS_TOKEN, '')Actions.login()
+        AsyncStorage.setItem(ACCESS_TOKEN, '')
+        Actions.login()
       }}>
         <Image source={require('./images/logout.png')} style={{
           width: 20,

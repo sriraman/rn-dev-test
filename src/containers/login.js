@@ -22,7 +22,7 @@ class Login extends Component {
     super(props)
     this.state = {
       email: '',
-      password: '',
+      password: 'dk5j4uafcF9dabEIpjjbOPTP',
       isProcessing: false
     }
   }
@@ -41,9 +41,11 @@ class Login extends Component {
         console.log(res.error)
         switch (res.error) {
           case 'invalid_client':
-            Alert.alert('Wrong credentials', 'Check your email and password')break
+            Alert.alert('Wrong credentials', 'Check your email and password')
+            break
           case 'internet_not_reachable':
-            Alert.alert('Internet Not Reachable', 'Please check your internet and try again.')break
+            Alert.alert('Internet Not Reachable', 'Please check your internet and try again.')
+            break
         }
         this.setState({isProcessing: false})
       } else {
