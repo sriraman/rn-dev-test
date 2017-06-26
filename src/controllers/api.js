@@ -35,7 +35,6 @@ function isLoggedIn(callback) {
 
 function getJobs(pageNum = 1, callback) {
   AsyncStorage.getItem(ACCESS_TOKEN).then((accessToken) => {
-    console.log(accessToken)
     fetch(baseUrl + 'jobs/' + pageNum + '?token=' + accessToken, {
       headers: {
         'Accept': 'application/json',
@@ -45,7 +44,6 @@ function getJobs(pageNum = 1, callback) {
     }).then((res) => {
       return res.json()
     }).then((res) => {
-      console.log(res)
       if (res.error) {
         callback({error: res.error})
       } else {

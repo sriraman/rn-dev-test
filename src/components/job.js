@@ -37,7 +37,7 @@ class Job extends Component {
           </Text>
           <Text style={jobStyles.rate}>
             £{job.rate}
-            <Text style={jobStyles.rateType}>({job.rate_type})
+            <Text style={jobStyles.rateType}> ({job.rate_type})
             </Text>
           </Text>
         </View>
