@@ -56,7 +56,6 @@ class Home extends Component {
   }
 
   _onEndReached() {
-    console.log('End reached')
     if (!this.state.loadingMore) {
       this.setState({loadingMore: true})
       api.getJobs(this.state.loadedPage + 1, (res) => {

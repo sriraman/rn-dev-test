@@ -10,10 +10,8 @@ class Job extends Component {
   }
   render() {
     let job = this.props.data.item
-    console.log(job)
     let companyImage = 'https://res.cloudinary.com/chris-mackie/image/upload/h_200/v' + job.company_img_v + '/' + job.company_img
     let employerImage = 'https://res.cloudinary.com/chris-mackie/image/upload/h_70/v' + job.employer_img_v + '/' + job.employer_img
-    console.log(employerImage)
     return (
       <View style={jobStyles.container}>
         <View style={jobStyles.companyImageContainer}>
